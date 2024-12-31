@@ -23,6 +23,7 @@ class RecipeFactory extends Factory
             'description' => $this->faker->paragraph(2),
             'cuisine_id' => rand(1, 4),
             'difficulty_id' => rand(1, 4),
+            'ingredients_description' => $this->faker->randomHtml(1,1),
         ];
     }
 }

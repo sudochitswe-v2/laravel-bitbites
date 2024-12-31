@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('description');
             $table->foreignId('cuisine_id')->constrained('cuisines');
             $table->foreignId('difficulty_id')->constrained('difficulties');
+            $table->text('ingredients_description');
         });
     }
 
